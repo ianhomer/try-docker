@@ -14,7 +14,8 @@
   <packaging>pom</packaging>
 
   <modules>
-    <module>small-java</module>
+    <module>small-java-10</module>
+    <module>small-java-11</module>
   </modules>
 
   <build>

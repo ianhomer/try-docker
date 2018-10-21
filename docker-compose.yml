@@ -3,6 +3,9 @@ services:
   small-alpine:
     build: ./small-alpine
     container_name : small-alpine
-  small-java:
-    build: ./small-java
-    container_name : small-java
+  small-java-10:
+    build: ./small-java-10
+    container_name : small-java-10
+  small-java-11:
+    build: ./small-java-11
+    container_name : small-java-11

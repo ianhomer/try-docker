@@ -18,6 +18,6 @@ COPY --from=linker /jdk-slim /jdk-slim
 ENV JAVA_HOME=/jdk-slim
 ENV PATH="$PATH:$JAVA_HOME/bin"
 WORKDIR /
-ADD target/small-java-1.0.0-SNAPSHOT.jar application.jar
+ADD target/small-java-10-1.0.0-SNAPSHOT.jar application.jar
 CMD echo "Starting application"
-CMD java -XshowSettings:all -Xms16m -Xmx16m -Xmn16m -jar application.jar
+CMD java -XshowSettings:all -Xms4m -Xmx4m -Xmn4m -jar application.jar

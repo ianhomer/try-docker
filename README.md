@@ -21,6 +21,11 @@ See process stats
 
     docker stats
 
+
+Just redeploy small-java-11
+
+    docker-compose up -d --build small-java-11 && docker-compose logs -f small-java-11
+
 # Analysis
 
 You should see something like this
