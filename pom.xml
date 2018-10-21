@@ -8,12 +8,13 @@
   </parent>
 
   <artifactId>try-docker</artifactId>
+  <groupId>com.purplepip.trial.docker</groupId>
   <version>1.0.0-SNAPSHOT</version>
   <name>try-docker</name>
   <packaging>pom</packaging>
 
   <modules>
-    <module>my-core</module>
+    <module>small-java</module>
   </modules>
 
   <build>

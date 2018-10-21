@@ -15,13 +15,17 @@
 
 package com.purplepip;
 
-import org.junit.jupiter.api.Test;
+import java.util.Date;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+class MyApplication {
+  public static void main(String[] args) throws InterruptedException {
+    new MyApplication().run();
+  }
 
-class MyClassTest {
-  @Test
-  void shouldHaveCorrectMessage() {
-    assertEquals("hello", new MyClass("hello").getMessage());
+  private void run() throws InterruptedException {
+    while (true) {
+      System.out.println(new Date());
+      Thread.sleep(10_000);
+    }
   }
 }

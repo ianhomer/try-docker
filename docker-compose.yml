@@ -1,0 +1,8 @@
+version: '3'
+services:
+  small-alpine:
+    build: ./small-alpine
+    container_name : small-alpine
+  small-java:
+    build: ./small-java
+    container_name : small-java
