@@ -51,7 +51,7 @@ small-java          0.33%               15.99MiB / 1.952GiB   0.80%             
 
 Run up a local node with
 
-    java -Xms4m -Xmx4m -Xmn4m -jar small-java-11/target/small-java-11-1.0.0-SNAPSHOT.jar
+    java -Xms1m -verbose:class -verbose:module -verbose:gc -verbose:jni -jar small-java-11/target/small-java-11-1.0.0-SNAPSHOT.jar
 
 And connect with
 

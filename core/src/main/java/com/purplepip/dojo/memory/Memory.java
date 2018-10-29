@@ -25,15 +25,15 @@ public class Memory {
   public String getSummary() {
     Runtime runtime = Runtime.getRuntime();
     StringBuilder sb = new StringBuilder(128);
-    sb.append("T=").append(bytesToMb(runtime.totalMemory()));
+    sb.append("T=").append(bytesToKb(runtime.totalMemory()));
     for (MemoryPoolMXBean bean : ManagementFactory.getMemoryPoolMXBeans()) {
       long used = bean.getUsage().getUsed();
-      sb.append(";").append(bean.getName(), 0, 2).append("=").append(bytesToMb(used));
+      sb.append(";").append(bean.getName(), 0, 2).append("=").append(bytesToKb(used));
     }
     return sb.toString();
   }
 
-  private long bytesToMb(long bytes) {
-    return bytes / (1024 * 1024);
+  private long bytesToKb(long bytes) {
+    return bytes / 1024;
   }
 }
