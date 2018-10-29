@@ -21,11 +21,15 @@ See process stats
 
     docker stats
 
-
 Just redeploy small-java-11
 
     docker-compose up -d --build small-java-11 && docker-compose logs -f small-java-11
 
+To view the process [status](http://man7.org/linux/man-pages/man5/proc.5.html), with
+VmRSS being an indicator of the memory footprint of the process.
+
+    docker exec small-java-10 cat /proc/8/status
+    docker exec small-java-11 cat /proc/8/status
 
 # Analysis
 

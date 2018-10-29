@@ -8,17 +8,37 @@
   </parent>
 
   <artifactId>try-docker</artifactId>
-  <groupId>com.purplepip.trial.docker</groupId>
+  <groupId>com.purplepip.try.docker</groupId>
   <version>1.0.0-SNAPSHOT</version>
   <name>try-docker</name>
   <packaging>pom</packaging>
 
   <modules>
+    <module>core</module>
     <module>small-java-10</module>
     <module>small-java-11</module>
   </modules>
 
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.purplepip.try.docker</groupId>
+        <artifactId>core</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
   <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-shade-plugin</artifactId>
+          <version>2.3</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>

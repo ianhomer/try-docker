@@ -15,6 +15,7 @@
 
 package com.purplepip;
 
+import com.purplepip.dojo.memory.Memory;
 import java.util.Date;
 
 class MyApplication {
@@ -24,7 +25,7 @@ class MyApplication {
 
   private void run() throws InterruptedException {
     while (true) {
-      System.out.println(new Date());
+      System.out.println(new Date() + ":" + new Memory().getSummary());
       Thread.sleep(10_000);
     }
   }
