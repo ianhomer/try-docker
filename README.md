@@ -44,7 +44,7 @@ try-docker_small-java-11  114MB
 
 NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
 small-alpine        0.00%               548KiB / 1.952GiB     0.03%               858B / 0B           0B / 0B             2
-small-java-11       0.33%               16.74MiB / 1.952GiB   0.83%               1.39kB / 0B         0B / 0B             25
+small-java-11       0.33%               14.17MiB / 1.952GiB   0.83%               1.39kB / 0B         0B / 0B             25
 ```
 
 ## JVM Analysis

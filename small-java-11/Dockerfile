@@ -5,7 +5,7 @@ RUN apt-get install -y binutils
 RUN /docker-java-home/bin/jlink \
     --module-path /docker-java-home/jmods/ \
     --verbose \
-    --add-modules java.base,java.management \
+    --add-modules java.base \
     --compress 2 \
     --no-header-files \
     --no-man-pages \

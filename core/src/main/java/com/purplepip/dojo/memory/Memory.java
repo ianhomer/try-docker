@@ -15,9 +15,6 @@
 
 package com.purplepip.dojo.memory;
 
-import java.lang.management.ManagementFactory;
-import java.lang.management.MemoryPoolMXBean;
-
 /**
  * A cheap and cheerful memory dump.
  */
@@ -26,10 +23,6 @@ public class Memory {
     Runtime runtime = Runtime.getRuntime();
     StringBuilder sb = new StringBuilder(128);
     sb.append("T=").append(bytesToKb(runtime.totalMemory()));
-    for (MemoryPoolMXBean bean : ManagementFactory.getMemoryPoolMXBeans()) {
-      long used = bean.getUsage().getUsed();
-      sb.append(";").append(bean.getName(), 0, 2).append("=").append(bytesToKb(used));
-    }
     return sb.toString();
   }
 
