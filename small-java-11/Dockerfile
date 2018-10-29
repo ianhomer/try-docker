@@ -20,4 +20,4 @@ ENV PATH="$PATH:$JAVA_HOME/bin"
 WORKDIR /
 ADD target/small-java-11-1.0.0-SNAPSHOT.jar application.jar
 CMD echo "Starting application"
-CMD java -Xnoclassgc -XshowSettings:all -Xms2m -Xmx2m -Xmn2m -jar application.jar
+CMD java -Xms4m -Xmx4m -Xmn4m -XX:MaxMetaspaceSize=16m -jar application.jar
