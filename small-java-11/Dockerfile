@@ -18,6 +18,7 @@ COPY --from=linker /jdk-slim /jdk-slim
 ENV JAVA_HOME=/jdk-slim
 ENV PATH="$PATH:$JAVA_HOME/bin"
 WORKDIR /
+RUN java -Xshare:dump
 ADD target/small-java-11-1.0.0-SNAPSHOT.jar application.jar
 CMD echo "Starting application"
-CMD java -Xms1m -verbose:class -verbose:module -verbose:gc -verbose:jni -jar application.jar
+CMD java -Xshare:on -Xms1m -verbose:class -verbose:module -verbose:gc -verbose:jni -jar application.jar

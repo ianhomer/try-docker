@@ -40,18 +40,27 @@ You should see something like this
 ```
 REPOSITORY               SIZE
 try-docker_small-alpine   4.41MB
-try-docker_small-java     96.3MB
+try-docker_small-java-11  114MB
 
 NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
 small-alpine        0.00%               548KiB / 1.952GiB     0.03%               858B / 0B           0B / 0B             2
-small-java          0.33%               15.99MiB / 1.952GiB   0.80%               1.39kB / 0B         0B / 0B             25
+small-java-11       0.33%               16.74MiB / 1.952GiB   0.83%               1.39kB / 0B         0B / 0B             25
 ```
 
 ## JVM Analysis
 
+
 Run up a local node with
 
     java -Xms1m -verbose:class -verbose:module -verbose:gc -verbose:jni -jar small-java-11/target/small-java-11-1.0.0-SNAPSHOT.jar
+
+You can enable CDS share 
+
+    sudo java -Xshare:dump
+    
+And then run with this CDS share
+    
+    java -Xshare:on -Xms1m -verbose:gc -jar small-java-11/target/small-java-11-1.0.0-SNAPSHOT.jar
 
 And connect with
 
