@@ -17,6 +17,7 @@
     <module>core</module>
     <module>small-java-10</module>
     <module>small-java-11</module>
+    <module>small-java-12</module>
   </modules>
 
   <dependencyManagement>

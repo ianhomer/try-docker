@@ -9,12 +9,14 @@
         <module name="core" />
         <module name="small-java-10" />
         <module name="small-java-11" />
+        <module name="small-java-12" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="core" target="10" />
       <module name="small-java-10" target="10" />
       <module name="small-java-11" target="10" />
+      <module name="small-java-12" target="10" />
       <module name="try-docker" target="10" />
     </bytecodeTargetLevel>
   </component>

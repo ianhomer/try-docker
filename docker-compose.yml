@@ -9,3 +9,6 @@ services:
   small-java-11:
     build: ./small-java-11
     container_name : small-java-11
+  small-java-12:
+    build: ./small-java-12
+    container_name : small-java-12

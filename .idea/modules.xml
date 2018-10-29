@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
       <module fileurl="file://$PROJECT_DIR$/small-java-10/small-java-10.iml" filepath="$PROJECT_DIR$/small-java-10/small-java-10.iml" />
       <module fileurl="file://$PROJECT_DIR$/small-java-11/small-java-11.iml" filepath="$PROJECT_DIR$/small-java-11/small-java-11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/small-java-12/small-java-12.iml" filepath="$PROJECT_DIR$/small-java-12/small-java-12.iml" />
       <module fileurl="file://$PROJECT_DIR$/try-docker.iml" filepath="$PROJECT_DIR$/try-docker.iml" />
     </modules>
   </component>

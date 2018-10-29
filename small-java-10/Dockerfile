@@ -21,3 +21,8 @@ WORKDIR /
 ADD target/small-java-10-1.0.0-SNAPSHOT.jar application.jar
 CMD echo "Starting application"
 CMD java -Xms1m -verbose:class -verbose:module -verbose:gc -verbose:jni -jar application.jar
+
+# Consider the importance of ...
+# -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap
+# -XX:ParallelGCThreads
+# -XX:CICompilerCount
