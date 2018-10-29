@@ -18,6 +18,9 @@ package com.purplepip.dojo.memory;
 import java.lang.management.ManagementFactory;
 import java.lang.management.MemoryPoolMXBean;
 
+/**
+ * A cheap and cheerful memory dump.
+ */
 public class Memory {
   public String getSummary() {
     Runtime runtime = Runtime.getRuntime();

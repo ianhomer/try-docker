@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-package com.purplepip;
+package com.purplepip.dojo;
 
 import com.purplepip.dojo.memory.Memory;
 import java.util.Date;
