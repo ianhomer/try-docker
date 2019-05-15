@@ -7,9 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="core" />
-        <module name="small-java-10" />
-        <module name="small-java-11" />
         <module name="small-java-12" />
+        <module name="small-java-11" />
+        <module name="small-java-10" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
